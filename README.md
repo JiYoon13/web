@@ -6,7 +6,7 @@ JAVA, Web, Spring
 - 도서등록, 도서목록, 도서수정, 도서검색, 도서삭제
 - 추가로 조회수, 리뷰, 게시판 기능 구현
 - Book_Project API 가이드 문서
-[Book_Project.hwp](https://github.com/JiYoon13/web/blob/main/Book_Project.hwp)
+[Book_Project.pdf](https://github.com/JiYoon13/web/blob/main/Book_Project.pdf)
 
 
 #### 2. day30 (성적 관리 프로젝트)
