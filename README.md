@@ -14,3 +14,11 @@ JAVA, Web, Spring
 - 성적입력, 성적조회, 성적수정, 성적삭제, 성적검색, 성적정렬, 로그인
 - day30 가이드 문서 
 [day30.docx](https://github.com/JiYoon13/web/blob/main/day30.docx)
+
+#### 3. day35 (성적 관리 프로젝트)
+- https://blog.naver.com/blue_567/222527517723
+- jsp로 성적 관리 프로젝트 구현하기 <br>
+- dbconnection.jsp를 이용해 db연결을 간편하게 구현
+- 성적입력, 성적조회, 성적수정, 성적삭제, 성적검색
+- javascript로 유효성 검사
+- day35 가이드문서
