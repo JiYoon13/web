@@ -7,3 +7,9 @@ JAVA, Web, Spring
 - 추가로 조회수, 리뷰, 게시판 기능 구현
 - Book_Project API 가이드 문서
 [Book_Project.hwp](https://github.com/JiYoon13/web/blob/main/Book_Project.hwp)
+
+
+#### 2. day30 (성적 관리 프로젝트)
+- jsp로 성적 관리 프로젝트 구현하기 <br>
+- 성적입력, 성적조회, 성적수정, 성적삭제, 성적검색, 성적정렬, 로그인
+- day30 가이드 문서 
