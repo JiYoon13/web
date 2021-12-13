@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yoon.myapp.ScoreService">
+
+	<insert id="input">
+		INSERT INTO SCORE VALUES(#{param1}, #{param2}, #{param3}, #{param4}, #{param5}, #{param6}, #{param7}, #{param8}, #{param9})
+	</insert>
+	
+	<select id="list" resultType="com.yoon.myapp.ScoreDTO">
+		SELECT * FROM SCORE ORDER BY NO
+	</select>
+	
+	<select id="modifylist" resultType="com.yoon.myapp.ScoreDTO">
+		SELECT * FROM SCORE WHERE NAME=#{param1}
+	</select>
+	
+	<update id="modify">
+		UPDATE SCORE SET NAME=#{param2}, KOR=#{param3}, ENG=#{param4}, MAT=#{param5}, TEC=#{param6}, TOT=#{param7}, AVG=#{param8}, GRADE=#{param9} WHERE NO=#{param1}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM SCORE WHERE NO=#{param1}
+	</delete>
+</mapper>
