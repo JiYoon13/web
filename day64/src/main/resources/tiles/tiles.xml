@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/top.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/side.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+	
+	<definition name="index" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp"/>
+	</definition>
+	
+	<definition name="list" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/list.jsp"/>
+	</definition>
+	
+	<definition name="input" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/input.jsp"/>
+	</definition>
+	
+	<definition name="uploadform" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/uploadform.jsp"/>
+	</definition>
+	
+	<definition name="delete" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/delete.jsp"/>
+	</definition>
+	
+	<definition name="modify" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/modify.jsp"/>
+	</definition>
+	
+</tiles-definitions>

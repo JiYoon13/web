@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yoon.member.MemberService">
+
+	<select id="list" resultType="com.yoon.member.MemberDTO">
+		SELECT * FROM MEMBER_TBL_03
+	</select>
+	
+	<select id="modifylist" resultType="com.yoon.member.MemberDTO">
+		SELECT * FROM MEMBER_TBL_03 WHERE ID=#{param1}
+	</select>
+	
+	<insert id="inputdata">
+		INSERT INTO MEMBER_TBL_03 VALUES(#{param1}, #{param2}, #{param3}, #{param4}, #{param5})
+	</insert>
+	
+	<delete id="deletedata">
+		DELETE FROM MEMBER_TBL_03 WHERE ID=#{param1}
+	</delete>
+	
+	<update id="modifydata">
+		UPDATE MEMBER_TBL_03 SET NAME=#{param2}, TEL=#{param3}, ADDRESS=#{param4}, EMAIL=#{param5} WHERE ID=#{param1}
+	</update>
+	
+</mapper>
