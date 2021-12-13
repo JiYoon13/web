@@ -39,6 +39,18 @@ JAVA, Web, Spring
 - 자료입력, 자료출력, 자료수정, 자료삭제
 - javascript로 유효성 검사
 - day63 가이드문서
-- [day63.pdf](https://github.com/JiYoon13/web/blob/main/day63.pdf)
+[day63.pdf](https://github.com/JiYoon13/web/blob/main/day63.pdf)
+
+#### 6. day64 (개인 정보 관리 프로젝트)
+- Spring으로 개인 정보 관리 프로젝트 구현하기
+- tiles를 이용하여 레이아웃 구성하기
+- mybatis를 연결하여 데이터베이스 사용하기
+- fileupload로 이미지 업로드하기 
+- DTO, DAO, Interface 사용하기
+- 자료입력, 자료출력, 자료수정, 자료삭제, 이미지업로드
+- 자료출력 시 주소에 따라 이미지 출력(수원시, 서울시)
+- day64 가이드문서
+[day64.pdf](https://github.com/JiYoon13/web/blob/main/day64.pdf)
+
 
 
