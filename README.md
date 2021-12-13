@@ -30,3 +30,15 @@ JAVA, Web, Spring
 - 도서목록, 도서검색, 도서구입, 구입목록, 관리자로그인, 도서추가, 도서수정, 도서삭제
 - day38 가이드 문서
 [day38.pdf](https://github.com/JiYoon13/web/blob/main/day38.pdf)
+
+#### 5. day63 (성적 관리 프로젝트)
+- Spring으로 성적 관리 프로젝트 구현하기
+- tiles를 이용하여 레이아웃 구성하기
+- mybatis를 연결하여 데이터베이스 사용하기
+- DTO, DAO, Interface 사용하기
+- 자료입력, 자료출력, 자료수정, 자료삭제
+- javascript로 유효성 검사
+- day63 가이드문서
+- [day63.pdf](https://github.com/JiYoon13/web/blob/main/day63.pdf)
+
+
