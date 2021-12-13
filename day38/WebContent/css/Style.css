@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+header{
+	background-color: #CED46A;
+	border-style: solid 1px;
+	border-color: #CED46A;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;	
+	text-align: center;
+	color: #07553B;
+}
+
+nav{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	background-color: #07553B;
+	border-style: solid 1px;
+	border-color: #ffefd5;
+	color: #CED46A;
+}
+
+section{
+	border-style: solid 1px;
+	border-color: white;
+	width: 100%;
+	height: 400px;
+	vertical-align: center;
+	text-align: center;
+}
+
+footer{
+	width: 100%;
+	text-align: center;
+	background-color: #07553B;
+	color: white;
+	border-style: solid 1px;
+	border-color: #07553B;
+}
+h3{	
+	text-align: center;
+}
+
+span{color: #07553B;}
+
+hr{border: 2px solid #CED46A;}
+form{
+	width: 100%;
+	text-align: center;
+}
+table{
+	width: 100%;
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+	border-collapse: collapse;
+}
+th,td{
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+}
+th{
+	background-color: #2BAE66;
+	color: #FCF6F5;
+}
+.container{
+	width: 100%;
+	height: 400px;
+}
+a:link {color: #CED46A; text-decoration: none;} 
+a:visited {color: #CED46A; text-decoration: none;}
+a:hover {color: white; text-decoration: underline;} 
