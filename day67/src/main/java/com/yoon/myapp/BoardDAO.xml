@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.yoon.myapp.BoardInterface">
+	
+	<insert id="inputdata">
+		INSERT INTO SPRING_BOARD VALUES(#{param1}, #{param2}, #{param3}, #{param4}, #{param5}, #{param6}, #{param7})
+	</insert>
+	
+	<select id="list" resultType="com.yoon.myapp.BoardDTO">
+		SELECT ID, PW, NAME, TEL, EMAIL, ADDRESS, TO_CHAR(BIRTH, 'YYYY-MM-DD')BIRTH  FROM SPRING_BOARD
+	</select>
+	
+	<select id="login" resultType="com.yoon.myapp.BoardDTO">
+		SELECT * FROM SPRING_BOARD WHERE ID=#{param1} AND PW=#{param2}
+	</select>
+	
+	<select id="deletelist" resultType="com.yoon.myapp.BoardDTO">
+		SELECT NAME FROM SPRING_BOARD WHERE ID=#{param1}
+	</select>
+	
+	<select id="modifylist" resultType="com.yoon.myapp.BoardDTO">
+		SELECT * FROM SPRING_BOARD WHERE ID=#{param1}
+	</select>
+	
+	<update id="modifydata">
+		UPDATE SPRING_BOARD SET PW=#{param2}, NAME=#{param3}, TEL=#{param4}, EMAIL=#{param5}, ADDRESS=#{param6}, BIRTH=#{param7} WHERE ID=#{param1}
+	</update>
+	
+	<delete id="deletedata">
+		DELETE FROM SPRING_BOARD WHERE ID=#{param1}
+	</delete>
+	
+	
+	<insert id="board_inputdata">
+		INSERT INTO T_BOARD(NUM, WRITER, TITLE, CONTENT, GROUPS) VALUES(NUM_SEQ.NEXTVAL, #{param1}, #{param2}, #{param3}, NUM_SEQ.CURRVAL)
+	</insert>
+	
+	<insert id="board_replyinput">
+		INSERT INTO T_BOARD(NUM, WRITER, TITLE, CONTENT, GROUPS, STEP, INDENT) VALUES(NUM_SEQ.NEXTVAL, #{param2}, #{param3}, #{param4}, #{param5}, #{param6}, #{param7})
+	</insert>
+	
+	<select id="board_list" resultType="com.yoon.myapp.TBoardDTO">
+		SELECT NUM, WRITER, TITLE, CONTENT, TO_CHAR(WRITEDAY, 'YYYY-MM-DD')WRITEDAY, READCNT, GROUPS, STEP, INDENT FROM T_BOARD ORDER BY GROUPS DESC, STEP ASC
+	</select>
+	
+	<select id="board_detail" resultType="com.yoon.myapp.TBoardDTO">
+		SELECT NUM, WRITER, TITLE, CONTENT, TO_CHAR(WRITEDAY, 'YYYY-MM-DD')WRITEDAY, READCNT, GROUPS, STEP, INDENT FROM T_BOARD WHERE NUM=#{param1}
+	</select>
+	
+	<select id="replyform" resultType="com.yoon.myapp.TBoardDTO">
+		SELECT * FROM T_BOARD WHERE NUM=#{param1}
+	</select>
+	
+	<update id="readcnt">
+		UPDATE T_BOARD SET READCNT=READCNT+1 WHERE NUM=#{param1}
+	</update>
+	
+	<update id="makereply">
+		UPDATE T_BOARD SET STEP=STEP+1 WHERE GROUPS=#{param1} AND STEP>#{param2}
+	</update>
+	
+	<delete id="board_deletedata">
+		DELETE FROM T_BOARD WHERE NUM=#{param1}
+	</delete>
+	
+</mapper>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<definition name="baseLayout"
+		template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="top" value="/WEB-INF/views/top.jsp" />
+		<put-attribute name="nav" value="/WEB-INF/views/nav.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+
+	<definition name="main" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/main.jsp" />
+	</definition>
+
+	<definition name="input" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/input.jsp" />
+	</definition>
+
+	<definition name="list" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/list.jsp" />
+	</definition>
+	
+	<definition name="delete" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/delete.jsp" />
+	</definition>
+	
+	<definition name="deleteform" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/deleteform.jsp" />
+	</definition>
+	
+	<definition name="modifyform" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/modifyform.jsp" />
+	</definition>
+	
+	<definition name="loginForm" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/loginForm.jsp" />
+	</definition>
+	
+	
+	<definition name="board_input" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/board_input.jsp" />
+	</definition>
+	
+	<definition name="board_list" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/board_list.jsp" />
+	</definition>
+	
+	<definition name="board_detail" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/board_detail.jsp" />
+	</definition>
+	
+	<definition name="replyform" extends="baseLayout">
+		<put-attribute name="body" value="/WEB-INF/views/replyform.jsp" />
+	</definition>
+	
+</tiles-definitions>
