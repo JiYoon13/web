@@ -22,3 +22,4 @@ JAVA, Web, Spring
 - 성적입력, 성적조회, 성적수정, 성적삭제, 성적검색
 - javascript로 유효성 검사
 - day35 가이드문서
+[day35.docx](https://github.com/JiYoon13/web/blob/main/day35.docx)
