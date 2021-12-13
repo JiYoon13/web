@@ -58,5 +58,6 @@ JAVA, Web, Spring
 - mybatis를 연결하여 데이터베이스 사용하기
 - 회원가입, 회원목록, 회원수정, 회원삭제
 - 로그인, 글작성, 글목록, 조회수, 답변글, 글삭제
+- 로그인 유효성 검사
 - day67 가이드 문서
 [day67.pdf](https://github.com/JiYoon13/web/blob/main/day67.pdf)
