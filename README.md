@@ -25,6 +25,7 @@ JAVA, Web, Spring
 [day35.pdf](https://github.com/JiYoon13/web/blob/main/day35.pdf)
 
 #### 4. day38 (도서 관리 프로젝트)
+- https://blog.naver.com/blue_567/222529050374
 - Servlet으로 도서 관리 프로젝트 구현하기
 - 도서목록, 도서검색, 도서구입, 구입목록, 관리자로그인, 도서추가, 도서수정, 도서삭제
 - day38 가이드 문서
